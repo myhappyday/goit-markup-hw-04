@@ -136,7 +136,7 @@ img {
 }
 
 .header-contacts {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -160,8 +160,7 @@ img {
   fill: var(--second-text-color);
 }
 
-.header-contacts-icon:hover,
-.header-contacts-icon:focus {
+.header-contacts-icon {
   fill: currentColor;
 }
 
@@ -232,6 +231,13 @@ img {
 
 .benefits-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.benefits-icons {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--section-bg-color);
+  border-radius: 4px;
 }
 
 .benefits-item-subtitle {
@@ -312,8 +318,12 @@ img {
   margin-right: 30px;
 }
 
+.team-card {
+  margin: 30px auto;
+}
+
 .team-item-subtitle {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -323,11 +333,36 @@ img {
 
 .team-item-text {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  /* fill: var(--social-media-color); */
+}
+
+.social-links-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  fill: var(--social-media-color);
+  outline: 1px solid red;
+}
+.social-links-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links-item:hover {
+  background-color: (--accent-color);
+  color: var(--primary-bg-color);
 }
 
 /* -------------------- Customers styles --------------------*/
