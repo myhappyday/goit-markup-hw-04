@@ -9,6 +9,7 @@
   --primary-black-logo-color: #000000;
   --primary-white-logo-color: #ffffff;
   --footer-link-color: rgba(255, 255, 255, 0.6);
+  --footer-icon-bg-color: rgba(255, 255, 255, 0.1);
   --primary-border-color: #eeeeee;
   --second-border-color: #ececec;
   --social-media-color: #afb1b8;
@@ -347,7 +348,7 @@ img {
 
 .social-links-item {
   width: 44px;
-  height: 40px;
+  height: 44px;
 }
 
 .social-links-item:not(:last-child) {
@@ -433,6 +434,15 @@ img {
   background-color: var(--second-bg-color);
 }
 
+.footer-address-social {
+  display: flex;
+}
+
+.footer-logo-address {
+  width: 231px;
+  margin-right: 70px;
+}
+
 .footer-logo {
   display: block;
   margin-bottom: 20px;
@@ -476,6 +486,54 @@ address {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
+}
+
+.footer-social {
+  width: 206px;
+  padding-top: 12px;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-logo-color);
+}
+
+.footer-social-list {
+  display: inline-flex;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--footer-icon-bg-color);
+  fill: var(--primary-white-logo-color);
+  /* outline: 1px solid teal; */
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
 }
 
 /* -------------------- Portfolio styles --------------------*/
