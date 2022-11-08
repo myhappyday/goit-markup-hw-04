@@ -235,7 +235,11 @@ img {
 }
 
 .benefits-icons {
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--section-bg-color);
   border-radius: 4px;
@@ -494,6 +498,7 @@ address {
 }
 
 .footer-text {
+  font-weight: 700;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
